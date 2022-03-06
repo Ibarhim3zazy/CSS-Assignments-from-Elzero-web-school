@@ -1,0 +1,152 @@
+/* All */
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+}
+/* Task 1 */
+.con{
+  width: 100px;
+  height: 100px;
+  padding: 100px;
+  margin: auto;
+  background-color: #eee;
+  position: relative;
+  margin-top: 50px;
+}
+.con div{
+  width: 100px;
+  height: 100px;
+}
+.con .blue{
+  background-color: #77c;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  z-index: 1;
+}
+.con .red{
+  background-color: #c11;
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  z-index: 3;
+
+}
+.con .green{
+  background-color: #7a7;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  z-index: 2;
+}
+.con .black{
+  background-color: #000;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+/* Task 2 */
+.con2{
+  width: 400px;
+  margin: auto;
+  background-color: #eee;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #CC1111 #36c;
+  padding: 20px;
+  position: relative;
+}
+.con2 span{
+  background-color: #36c;
+  padding: 8px 20px;
+  position: absolute;
+  color: #fff;
+}
+.top-left,.bottom-left{
+  top: -20px;
+  left: -25px;
+  border-right-width: 3px;
+  border-right-style: solid;
+  border-right-color: #CC1111;
+}
+.bottom-left{
+  top: auto;
+  bottom: -20px;
+}
+.top-right,.bottom-right{
+  top: -20px;
+  right: -25px;
+  border-left-width: 3px;
+  border-left-style: solid;
+  border-left-color: #CC1111;
+}
+.bottom-right{
+  top: auto;
+  bottom: -20px;
+}
+/* Task 3 */
+.con3 ul{
+  width: 400px;
+  margin: auto;
+}
+.con3 .ulli{
+  background-color: #eee;
+  list-style-type: none;
+  padding: 15px;
+  margin: 15px 0px;
+}
+.ulli li{
+  background-color: #fff;
+  padding: 10px;
+  margin: 15px 0px;
+}
+#x{
+  list-style-type: disclosure-closed;
+}
+/* Task 4 */
+table{
+  width: 700px;
+  margin: auto;
+  text-align: center;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #5c5;
+  margin-bottom: 100px;
+}
+table caption{
+  font-weight: bold;
+  margin: 10px;
+  font-size: 22px;
+}
+table tr th{
+  background-color: #333;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+table tr td{
+  background-color: #eee;
+  color: #000;
+  font-size: 18px;
+  padding: 10px;
+}
+table img{
+  width: 100px;
+  height: 80px;
+  border-radius: 10px;
+}
+table input{
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+table input[value="View"]{
+  background-color: #52f;
+}
+table input[value="Delete"]{
+  background-color: #f25;
+}

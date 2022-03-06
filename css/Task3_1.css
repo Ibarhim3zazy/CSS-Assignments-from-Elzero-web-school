@@ -1,0 +1,27 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+div{
+  width: 380px;
+  height: auto;
+  background-color: #ddd;
+  margin: 30px;
+  padding: 10px;
+  padding-left: 20px;
+  border-left: #0004;
+  border-left-width: 15px;
+  border-left-style: solid;
+  outline-width: 20px;
+  outline-style: solid;
+  outline-color: #ddd;
+}
+#div1{
+  border-left-color: #f03;
+}
+#div2{
+  visibility: hidden;
+}
+#div3{
+  border-left-color: #3f3;
+}

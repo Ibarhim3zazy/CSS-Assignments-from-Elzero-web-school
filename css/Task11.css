@@ -1,0 +1,53 @@
+/* All */
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+}
+/* Task 1 */
+.con1 .parent{
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: #ccc;
+  text-align: center;
+  margin: 40px auto;
+  transition-duration: .5s;
+  transition-property: all;
+}
+.con1 .parent:hover{
+  margin-top: 20px;
+}
+.con1 .parent div{
+  width: 300px;
+  padding: 5px 10px;
+  background-color: #aaa;
+  margin-top: 15px;
+  transition: all .5s .5s;
+}
+.con1 .parent:hover div{
+  margin-top: 50px;
+  background-color: #f03;
+}
+/* Task 2 */
+.con2 div{
+  background-color: #ccc !important;
+  color: #000 !important;
+  border: none !important;
+  width: 400px;
+  margin: auto;
+  font-size: 20px;
+}
+/* Task 3 */
+:root {
+  --mainColor: #009688;
+  --mainPadding: 10px;
+}
+.con3 div {
+  width: 60%;
+  padding: var(--mainPadding, 10px) 30px;
+  margin: auto;
+  border: 4px solid var(--mainColor, #000);
+  color: var(--mainColor, #f03);
+  margin-bottom: 15px;
+}

@@ -1,0 +1,262 @@
+/* All */
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+}
+/* for rotate animation */
+@keyframes rotate {
+  to{
+    transform: rotate(360deg);
+  }
+}
+/* Task 1 */
+.con1{
+  width: 150px;
+  height: 150px;
+  background-color: #ddd;
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.con1 div{
+  width: 50px;
+  height: 50px;
+  border: solid 5px #E2248A;
+  border-left-color: transparent;
+  border-radius: 50%;
+  position: relative;
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.con1 div:hover{
+  animation-play-state: paused;
+}
+.con1 div::before{
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border: solid 5px #1C90F7;
+  border-right-color: transparent;
+  border-radius: 50%;
+}
+.con1 div::after{
+  content: '';
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  border: solid 5px #FCA200;
+  border-top-color: transparent;
+  border-radius: 50%;
+}
+/* Task 2 */
+.con2{
+  width: 150px;
+  height: 150px;
+  background-color: #ddd;
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.con2 div{
+  width: 50px;
+  height: 50px;
+  border: solid 5px #1C90F7;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  position: relative;
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+.con2 div::before{
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border: solid 5px #E2248A;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 4s;
+  animation-play-state: paused;
+}
+.con2 div::after{
+  content: '';
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  border: solid 5px #000;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 6s;
+  animation-play-state: paused;
+}
+.con2 div:hover, .con2 div:hover::before, .con2 div:hover::after{
+  animation-play-state: running;
+}
+/* Task 3 */
+.con3{
+  width: 150px;
+  height: 150px;
+  background-color: #ddd;
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.con3 span{
+  width: 50px;
+  height: 50px;
+  background-color: #999;
+  border: solid 5px #000;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  position: relative;
+  animation-name: rotate;
+  animation-direction: reverse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+/* Task 4 */
+.con4{
+  width: 700px;
+  height: 600px;
+  padding: 100px;
+  background-color: #ddd;
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-around;
+}
+.con4 .E{
+  width: 80px;
+  height: 400px;
+  background-color: #323234;
+  display: grid;
+  grid-column: 1fr;
+  grid-row: 80px 80px 80px;
+  align-content: space-between;
+  position: relative;
+}
+.con4 .E div{
+  width: 200px;
+  height: 80px;
+  background-color: #323234;
+}
+.con4 .E::after{
+  content: '';
+  position: absolute;
+  right: -100px;
+  top: 15px;
+  width: 50px;
+  height: 50px;
+  background-color: #FEA604;
+  animation-name: E;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes E {
+5% {
+    transform: translateX(-115px);
+  }
+  10% {
+    transform: translate(-115px, 160px);
+  }
+  15%{
+    transform: translate(0px, 160px);
+  }
+  20% {
+    transform: translate(-115px, 160px);
+  }
+  25% {
+    transform: translate(-115px, 320px);
+  }
+  30% {
+    transform: translate(0px, 320px);
+  }
+  35% {
+    transform: translate(-115px, 320px);
+  }
+  40% {
+    transform: translate(-115px, 0px);
+  }
+  45% {
+    transform: translate(0px, 0px);
+  }
+  100%{
+    transform: translate(0px, 0px);
+  }
+}
+.con4 .L{
+  width: 80px;
+  height: 400px;
+  background-color: #323234;
+  display: grid;
+  grid-column: 1fr;
+  grid-row: 80px 80px 80px;
+  justify-content: flex-start;
+  align-content: flex-end;
+}
+.con4 .L div{
+  width: 200px;
+  height: 80px;
+  background-color: #323234;
+  position: relative;
+}
+.con4 .L div::after{
+  content: '';
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 50px;
+  height: 50px;
+  background-color: #FEA604;
+  animation-name: L;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes L {
+12.5% {
+    transform: translateX(-120px);
+  }
+  32.5% {
+    transform: translate(-120px, -320px);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-120px, -320px);
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
+}

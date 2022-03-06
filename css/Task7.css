@@ -1,0 +1,47 @@
+/* All */
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #ddd;
+  text-align: center;
+}
+/* Task 1 */
+div:not(.con1,.con2,.con3){
+  padding: 10px;
+  background-color: #ccc;
+  margin: 10px 0px;
+  font-weight: bold;
+}
+.element1{
+  display: inline-block;
+  width: 70%;
+}
+.con1 div{
+  display: inline-block;
+  width: calc((70% - 6px) / 3);
+}
+.con2 div{
+  display: inline-block;
+  width: calc((70% - 4px) / 2);
+}
+.con3 div{
+  display: inline-block;
+  width: calc((70% - 10px) / 4);
+}
+/* Task 2 */
+.normal,.one ,.two {
+  margin: 20px auto;
+  width: 300px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 20px;
+  background-color: ccc; /* Get The Background From Image */
+  color: black;
+}
+.one{
+  background-color: #ccc6 !important;
+}
+.two{
+  opacity: .1;
+}

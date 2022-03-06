@@ -1,0 +1,102 @@
+/* All */
+body{
+  margin: 0px;
+}
+/* Task 1 */
+.con1 div{
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background-color: #ccc;
+  padding: 50px;
+  margin: 40px auto;
+  border: 5px solid #000;
+  border-radius: 50%;
+  counter-increment: element_count;
+  position: relative;
+  box-shadow: -10px -10px 0px #c27, 10px 10px 0px #27c;
+}
+.con1 div::before{
+  content: counter(element_count);
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  background-color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: -20px;
+}
+/* Task 2 */
+.con2 div{
+  width: 100px;
+  height: 100px;
+  background-color: #eee;
+  margin: auto;
+  border-top-left-radius: 15px 25px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 15px 25px;
+  box-shadow: 0px 0px 4px 5px #0008 inset;
+}
+/* Task 3 */
+.con3{
+  width: 550px;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 60px;
+  background-color: #eee;
+}
+.con3 .basic,.con3 .pro{
+  padding: 20px;
+  width: 38%;
+  display: inline-block;
+  background-color: #ccc;
+  text-align: center;
+  position: relative;
+}
+.con3 .pro{
+  float: right;
+}
+.con3 .pro::before{
+  content: '';
+  width: 3px;
+  height: 100%;
+  background-color: #27c;
+  position: absolute;
+  left: -25px;
+  top: 0px;
+}
+.con3 .pro::after{
+  content: 'Or';
+  padding: 10px;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #27c;
+  position: absolute;
+  left: -42px;
+  top: 50%;
+  margin-top: -5px;
+}
+.con3 h1{
+  padding: 10px 60px;
+  background-color: #27c;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+}
+.con3 span{
+  width: 60px;
+  height: 60px;
+  padding: 70px;
+  display: block;
+  border-radius: 50%;
+  background-color: #aaa;
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: 600;
+}

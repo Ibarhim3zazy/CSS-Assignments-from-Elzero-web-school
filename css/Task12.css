@@ -1,0 +1,196 @@
+/* All */
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+}
+/* Task 1 */
+.con1 div{
+  width: 100px;
+  height: 100px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FF5722;
+  border-radius: 50%;
+  box-shadow: 5px 0px #FF5722, -5px 0px #03A9F4;
+}
+/* Task 2 */
+.con2 .parent{
+  width: 600px;
+  height: 300px;
+  padding: 15px;
+  margin: auto;
+  background-color: #ccc;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+}
+.con2 .parent div{
+  width: calc(92% / 3);
+  height: 40px;
+  background-color: #F44336;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Task 3 */
+.con3 .parent{
+  width: 600px;
+  height: 300px;
+  margin: auto;
+  padding: 15px;
+  background-color: #ccc;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.con3 .parent div{
+  width: calc(92% / 3);
+  background-color: #607D8B;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.con3 .parent .one{
+  order: 6;
+  align-self: flex-end;
+}
+.con3 .parent .two{
+  order: 5;
+}.con3 .parent .three{
+  order: 2;
+  align-self: flex-start;
+}.con3 .parent .four{
+  order: 3;
+}.con3 .parent .five{
+  order: 4;
+}.con3 .parent .six{
+  order: -1;
+}
+/* Task 4 */
+.con4 .parent{
+  width: 600px;
+  height: 300px;
+  margin: auto;
+  padding: 15px;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.con4 .parent div{
+  background-color: #009688;
+  color: #fff;
+  padding: 25px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.con4 .parent .one{
+  align-self: flex-end;
+}
+.con4 .parent .two{
+  width: calc(100% / 2);
+}
+.con4 .parent .three{
+  align-self: flex-end;
+}
+/* Task 5 */
+.con5 .parent{
+  width: 600px;
+  height: 300px;
+  margin: auto;
+  padding: 15px;
+  background-color: #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+.con5 .parent div{
+  background-color: #009688;
+  height: 50%;
+  color: #fff;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.con5 .parent .one{
+  background-color: #FF9800;
+  align-self: flex-start;
+}
+.con5 .parent .two{
+  background-color: #8BC34A;
+  align-self: flex-end;
+}
+.con5 .parent .three{
+  background-color: #795548;
+  align-self: flex-start;
+}
+.con5 .parent .four{
+  background-color: #673AB7;
+  order: -1;
+  align-self: flex-end;
+}
+/* Task 6 */
+:root{
+  --background_color: #ccc;
+}
+.con6 .page{
+  width: 80%;
+  height: 500px;
+  padding: 15px;
+  background-color: #ddd;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.con6 .page div{
+  padding: 10px;
+}
+.con6 .header,.con6 .main-area{
+  display: flex;
+  justify-content: space-between;
+  align-content: stretch;
+}
+.con6 .logo{
+  background-color: var(--background_color);
+  align-self: center;
+  width: 8%;
+  text-align: center;
+}
+.con6 .links{
+  background-color: var(--background_color);
+  width: 90%;
+  padding: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.con6 .links li{
+  padding: 0px 10px;
+}
+.con6 .main-area .content{
+  background-color: var(--background_color);
+  width: 75%;
+}
+.con6 .main-area{
+  height: 300px;
+}
+.con6 .main-area .sidebar{
+  background-color: var(--background_color);
+  width: 22%;
+}
+.con6 .footer{
+  background-color: var(--background_color);
+  display: flex;
+  justify-content: space-between;
+}

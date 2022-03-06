@@ -1,0 +1,58 @@
+/* Task 1 */
+span{
+  font-size: 80px;
+  text-shadow: 2px 2px 1px #f03, 4px 4px 1px #03f, 6px 6px 1px #000;
+}
+p .one{
+  text-transform: uppercase;
+}
+.two{
+  text-transform: capitalize;
+}
+.three{
+  text-transform: lowercase;
+}
+.one,.two ,.three{
+  font-size: 60px;
+}
+div{
+  position: relative;
+  width: 400px;
+  height: 200px;
+  padding: 40px 20px 25px 20px;
+  margin: 15px 0;
+  direction: ltr;
+  border-radius: 0;
+  border: none;
+  background: #2d2d2d;
+  color: #ccc;
+  font-family: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
+  line-height: 1.5;
+  display: block;
+}
+#azazy{
+  width: 200px;
+  height: 100px;
+  background-color: #197;
+  border-bottom: #0004;
+  border-bottom-width: 20px;
+  border-bottom-style: solid;
+}
+
+.two2{
+  white-space: nowrap;
+  overflow: hidden;
+}
+.three3{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+div a{
+  text-decoration: none;
+  color: #ccc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

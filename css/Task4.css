@@ -1,0 +1,21 @@
+body{
+  margin: 0px;
+}
+.parent .child .title{
+  color: #f33;
+}
+.parent .title{
+  color: #33f;
+}
+p, .title{
+  color: #3f3;
+}
+.div{
+  padding: 10px;
+  background-color: #c33;
+  max-width: 400px;
+  max-height: 40px;
+  margin-top: 10px;
+  display: block;
+  overflow: hidden;
+}

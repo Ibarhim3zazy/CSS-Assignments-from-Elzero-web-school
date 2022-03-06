@@ -1,0 +1,70 @@
+/* All */
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+}
+/* Task 1 */
+.con1 div{
+  width: 600px;
+  margin: 40px auto;
+  background-color: #ddd;
+  padding: 30px 0px;
+  text-align: center;
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  border-left: 10px solid #F44336;
+  border-right: 10px solid #673AB7;
+}
+.con1 div::first-letter{
+  color: #F44336;
+}
+.con1 div::before{
+  content: '';
+  width: 100%;
+  height: 10px;
+  background-image: linear-gradient(to right,#F44336 20%,#2196F3 20%,#2196F3 40%,#4CAF50 40%,#4CAF50 60%,#E91E63 60%,#E91E63 80%, #673AB7 80%);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.con1 div::after{
+  content: '';
+  width: 100%;
+  height: 10px;
+  background-image: linear-gradient(to right,#F44336 20%,#2196F3 20%,#2196F3 40%,#4CAF50 40%,#4CAF50 60%,#E91E63 60%,#E91E63 80%, #673AB7 80%);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+/* Task 2 */
+.con2 p{
+  width: 600px;
+  margin: 15px auto;
+  padding: 20px 15px;
+  background-color: #ddd;
+  font-size: 25px;
+  color: #0006;
+  border: none;
+  font-weight: bold;
+  position: relative;
+}
+.con2 p:first-child{
+  color: #000;
+}
+.con2 p::after{
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-image: linear-gradient(to right,#F44336 50%,#2196F3 50%);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.con2 p:focus{
+  caret-color: #F44336;
+  outline: none;
+}

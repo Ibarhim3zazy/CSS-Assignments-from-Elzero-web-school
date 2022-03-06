@@ -1,0 +1,221 @@
+/* All */
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+}
+/* Task 1 */
+.con1 .grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr;
+  grid-gap: 10px 10px;
+}
+.con1 .grid div{
+  counter-increment: grid_con;
+  background-color: #607D8B;
+  padding: 20px 0px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.con1 .grid div::after{
+  content: 'Element ' counter(grid_con);
+  color: #fff;
+}
+/* Task 2 */
+.con2 .layout{
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "head head head head head" "sec sec sec sec aside" "foot foot foot foot foot";
+}
+.con2 .layout header{
+  grid-area: head;
+  background-color: #03A9F4;
+  padding: 15px;
+}
+.con2 .layout header::after{
+  content: "Header";
+  color: #fff;
+}
+.con2 .layout section{
+  grid-area: sec;
+  background-color: #FF5722;
+  padding: 15px;
+}
+.con2 .layout section::after{
+  content: "Section";
+  color: #fff;
+}
+.con2 .layout aside{
+  grid-area: aside;
+  background-color: #607D8B;
+  padding: 15px;
+}
+.con2 .layout aside::after{
+  content: "Aside";
+  color: #fff;
+}
+.con2 .layout footer{
+  grid-area: foot;
+  background-color: #009688;
+  padding: 15px;
+}
+.con2 .layout footer::after{
+  content: "Footer";
+  color: #fff;
+}
+/* Task 3 */
+.con3 .grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto repeat(2, 1fr) auto;
+  grid-template-rows: 1fr auto;
+  grid-gap: 10px;
+}
+.con3 .grid div{
+  background-color: #403F3F;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+/* Task 4 */
+.con4 .grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 15px;
+}
+.con4 .grid div{
+  background-color: #2196F3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+}
+.con4 .grid .one{
+  grid-column: span 3;
+  order: 8;
+}
+.con4 .grid .two{
+  grid-column: span 2;
+}
+.con4 .grid .five{
+  grid-column: span 2;
+  grid-row: span 3
+}
+.con4 .grid .eight{
+  grid-column: span 3;
+  order: -1;
+}
+/* Task 5 */
+.con5 .grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-column-gap: 10px;
+  align-content: space-between;
+}
+.con5 .grid div{
+  background-color: #E91E63;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+}
+/* Task 6 */
+.con6{
+  background-color: #ddd;
+  padding: 20px;
+  width: 80%;
+  height: 220vh;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 380px repeat(2, 1fr) 280px;
+  grid-gap: 10px;
+}
+.con6 div{
+  background-color: #fff;
+  padding: 15px;
+  overflow: hidden;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #FE4C14;
+  position: relative;
+}
+.con6 div::after{
+  content: attr(attreb);
+  font-size: 40px;
+  font-weight: bold;
+  color: #0008;
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+}
+.con6 div h3{
+  color: #0008;
+}
+.con6 .bg_black{
+  background-color: #000;
+  color: #fff;
+}
+.con6 .bg_black::after{
+  content: attr(attreb);
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff5;
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+}
+.con6 .bg_black h3{
+  color: #fff8;
+}
+.con6 .one{
+  grid-column: span 2;
+}
+.con6 .three{
+  grid-row: span 3;
+}
+.con6 .four{
+  grid-row: span 2;
+}
+.con6 .five{
+  grid-column: span 2;
+}
+.con6 .six{
+  grid-column: span 2;
+}

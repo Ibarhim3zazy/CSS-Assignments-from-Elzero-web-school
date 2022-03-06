@@ -1,0 +1,150 @@
+/* All */
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+}
+/* Task 1 */
+.con1 h1{
+  width: 150px;
+  margin: 60px auto;
+  padding: 20px 0px;
+  text-align: center;
+  background-color: #FF5722;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+}
+.con1 h1::before{
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 150px;
+  height: 100%;
+  background-color: #ff5722;
+  transform: skew(10deg, 10deg);
+  z-index: -1;
+}
+.con1 h1::after{
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 150px;
+  height: 100%;
+  background-color: #ff5722;
+  transform: skew(-10deg, -10deg);
+  z-index: -1;
+}
+/* Task 2 */
+.con2 h1{
+  width: 150px;
+  margin: 60px auto;
+  padding: 20px 0px;
+  text-align: center;
+  background-color: #009688;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+}
+.con2 h1::before{
+  content: '';
+  position: absolute;
+  left: -14px;
+  top: 0px;
+  width: 21px;
+  height: 100%;
+  background-color: #009688;
+  transform: skewX(20deg);
+  /* transform: matrix(3, 0.2679, 0, 3, 20, 100); */
+  border-right: solid 8px #fff;
+}
+/* Task 3 */
+.con3 div{
+  width: 200px;
+  height: 200px;
+  background-color: #607D8B;
+  margin: 120px auto;
+  border-bottom: solid 5px #000;
+  position: relative;
+}
+.con3 div::before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  width: calc(100% - ((100% * 1.4) - 100%) + 13px);
+  height: calc(100% - ((100% * 1.4) - 100%) + 13px);
+  background-color: #000;
+  border: solid 5px #fff;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.con3 div::after{
+  content: '3zazy';
+  position: absolute;
+  left: 2%;
+  bottom: 2%;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* Task 4 flip horizontally */
+.con4 div, .con5 div{
+  width: 200px;
+  height: 200px;
+  margin: 120px auto;
+  position: relative;
+  transform-style: preserve-3d;
+  transform-origin: right top;
+  transition: transform 1s;
+}
+.con4 div::before, .con5 div::before{
+  content: 'Back';
+  background-color: #1692FC;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+}
+.con4 div::after, .con5 div::after{
+  content: 'Front';
+  background-color: #EA2264;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+.con4 div:hover{
+  cursor: pointer;
+  background-color: #77f;
+  transform: translateX(-100%) rotateY(180deg) /* skewX(180deg) */;
+}
+/* Task 4 flip vertically */
+.con5 div::before{
+  transform: rotateX(180deg);
+}
+.con5 div:hover{
+  cursor: pointer;
+  background-color: #77f;
+  transform: translateY(100%) rotateX(180deg) /* skewX(180deg) */;
+}

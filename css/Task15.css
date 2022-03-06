@@ -1,0 +1,89 @@
+/* All */
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+}
+/* Task 1 */
+.con1 div{
+  width: 300px;
+  height: 200px;
+  margin: 20px auto;
+  font-size: 35px;
+  font-weight: bold;
+  color: #03A9F4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  position: static;
+  z-index: 999999999;
+}
+.con1 div::before{
+  content: '';
+  width: 300px;
+  height: 200px;
+  background-color: #E91E63;
+  transform: rotate(5deg);
+  position: absolute;
+  z-index: -1;
+}
+.con1 div::after{
+  content: '';
+  width: 300px;
+  height: 200px;
+  background-color: #03A9F4;
+  transform: rotate(-5deg);
+  position: absolute;
+  z-index: -1;
+}
+/* Task 2 */
+.con2{
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.con2 div{
+  width: 200px;
+  height: 200px;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  border-radius: 50%;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px #aaa;
+}
+.con2 div::before{
+  content: '';
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: -12px;
+  border-radius: 50%;
+  border: solid 10px;
+  border-color: #E91E63 #E91E63 #E91E63 transparent;
+  transition: .5s;
+}
+.con2 div:hover::before, .con2 div:hover::after{
+  transform: rotate(360deg);
+}
+.con2 div::after{
+  content: '';
+  width: 220px;
+  height: 220px;
+  position: absolute;
+  left: -22px;
+  border: solid 1px #aaa;
+  border-radius: 50%;
+  border: solid 10px;
+  border-color: #03A9F4 transparent #03A9F4 #03A9F4;
+  transition: .5s .5s;
+}

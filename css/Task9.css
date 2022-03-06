@@ -1,0 +1,84 @@
+/* All */
+body{
+  margin: 0px;
+}
+/* Task 1 */
+.con1 div{
+  width: 300px;
+  height: 20px;
+  padding: 20px 0px;
+  background-color: #ccc;
+  text-align: center;
+  margin: 20px auto;
+}
+.con1 div:empty{
+  background-color: #f03;
+}
+/* Task 2 */
+.con2 div{
+  width: fit-content;
+  padding: 20px;
+  margin: auto;
+  background-color: #ccc;
+  font-size: 25px;
+}
+.con2 div::first-letter{
+  display: inline-block;
+  padding: 10px;
+  background-color: #f03;
+  color: #fff;
+  margin-left: -35px;
+}
+/* Task 3 */
+.con3 p{
+  width: 25%;
+  padding: 25px 25px;
+  background-color: #ccc;
+  margin: 15px auto;
+  position: relative;
+  border-left: 5px solid #c27;
+}
+.con3 p::before{
+  content: attr(data-person);
+  width: 40px;
+  padding: 15px 25px;
+  background-color: #ccc;
+  position: absolute;
+  left: -120px;
+  margin-top: -15px;
+}
+.con3 p::after{
+  content: '';
+  width: 0px;
+  height: 0px;
+  border-color: transparent #c27 transparent transparent;
+  border-width: 12px;
+  border-style: solid;
+  position: absolute;
+  left: -28px;
+  top: 50%;
+  margin-top: -12px;
+}
+/* Task 4 */
+.con4 p{
+  width: 25%;
+  height: 20px;
+  padding: 25px 25px;
+  background-color: #ccc;
+  margin: 15px auto;
+  position: relative;
+  border-right: 5px solid #c31;
+  counter-increment: members-counter;
+}
+.con4 p::before{
+  content: counter(members-counter);
+  height: 20px;
+  padding: 25px 25px;
+  background-color: #c31;
+  position: absolute;
+  left: -60px;
+  top: 0px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}

@@ -1,0 +1,96 @@
+/* All */
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+}
+/* Task 1 */
+.con1{
+  width: 150px;
+  height: 200px;
+  background-color: #ddd;
+  margin: 60px auto;
+  text-align: center;
+  font-size: 25px;
+}
+.con1 div[class="main red"]{
+  color: #f03;
+}
+/* Task 2 */
+.con2{
+  width: fit-content;
+  height: fit-content;
+  background-color: #ddd;
+  margin: 60px auto;
+  font-size: 25px;
+}
+.con2 .parent > .child:last-child{
+  color: #f03;
+}
+/* Task 3 */
+.con3{
+  width: fit-content;
+  height: fit-content;
+  background-color: #ddd;
+  margin: 60px auto;
+  font-size: 25px;
+}
+.con3 .parent:nth-child(2){
+  color: #f03;
+}
+/* Task 4 */
+.con4{
+  width: fit-content;
+  height: fit-content;
+  background-color: #ddd;
+  margin: 60px auto;
+  font-size: 25px;
+}
+.con4 > div[title]:not(.no-need){
+  color: #f03;
+}
+/* Task 5 */
+.con5{
+  width: fit-content;
+  height: fit-content;
+  background-color: #ddd;
+  margin: 60px auto;
+  font-size: 25px;
+}
+.con5 > div:nth-child(2) div:last-child{
+  color: #f03;
+}
+/* Task 6 */
+.con6{
+  width: fit-content;
+  height: fit-content;
+  background-color: #ddd;
+  margin: 60px auto;
+  font-size: 25px;
+}
+.con6 > div:not(.no-need) div:nth-last-of-type(2){
+  color: #f03;
+}
+/* Task 7 */
+.con7{
+  width: fit-content;
+  height: fit-content;
+  background-color: #ddd;
+  margin: 60px auto;
+  font-size: 30px;
+}
+.con7 > div:first-child div:nth-last-of-type(2){
+  color: #f03;
+}
+/* Task 8 */
+.con8{
+  width: fit-content;
+  height: fit-content;
+  background-color: #ddd;
+  margin: 60px auto;
+  font-size: 30px;
+}
+.con8 div :not(:first-child,:last-child,h3){
+  color: #f03;
+}
